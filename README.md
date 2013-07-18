@@ -1,6 +1,6 @@
 # Modules Hello World
 
-This is a sample application using the Google Appengine Modules API.
+This is a sample application using the Google App Engine [Modules API][10].
 It demonstrates how to create multiple modules serving different functions
 as well as custom routing to different modules.
 
@@ -23,14 +23,14 @@ requests for the path `/work` are served by the `static-backend` module.
 To deploy your each module for your application, run
 
 ```
-$PATH_TO_CUSTOM_SDK/appcfg.py update app.yaml mobile_frontend.yaml static_backend.yaml
+$PATH_TO_SDK/appcfg.py update app.yaml mobile_frontend.yaml static_backend.yaml
 ```
 
-using the [custom SDK][9] distributed for Trusted Testers. To set-up the custom
+using the [Google App Engine SDK][9] with version at least 1.8.2. To set-up the custom
 routing, you'll also need to run
 
 ```
-$PATH_TO_CUSTOM_SDK/update_dispatch .
+$PATH_TO_SDK/update_dispatch .
 ```
 
 from directory containing the application.
@@ -49,4 +49,5 @@ from directory containing the application.
 [6]: https://github.com/GoogleCloudPlatform/appengine-modules-helloworld-python/blob/master/dispatch.yaml
 [7]: https://github.com/GoogleCloudPlatform/appengine-modules-helloworld-python/blob/master/mobile_frontend.yaml
 [8]: https://github.com/GoogleCloudPlatform/appengine-modules-helloworld-python/blob/master/static_backend.yaml
-[9]: http://commondatastorage.googleapis.com/gae-servers-tt/google_appengine.zip
+[9]: https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python
+[10]: https://developers.google.com/appengine/docs/python/modules
