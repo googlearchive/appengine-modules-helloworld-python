@@ -30,7 +30,7 @@ using the [Google App Engine SDK][9] with version at least 1.8.2. To set-up the 
 routing, you'll also need to run
 
 ```
-$PATH_TO_SDK/update_dispatch .
+$PATH_TO_SDK/appcfg.py update_dispatch .
 ```
 
 from directory containing the application.
