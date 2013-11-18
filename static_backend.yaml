@@ -5,7 +5,6 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
-instance_class: S1
 manual_scaling:
   instances: 1
 
